@@ -9,26 +9,40 @@
         body{
             background-color: rgba(0,0,0,0);
         }
-        #rectangle {
-            background: pink;
+       .same {
             position: absolute;
             left : 0px;
-            width: 50px;
-            height : 50px;
-            animation: drive 4s steps(3, start) infinite;
+            width: 150px;
+            height : 150px;
+            border-radius: 50%;
+        }
+        #rectangle1 {
+            background: pink;
+            animation: drive 5s steps(6, start) infinite;
+        }
+        #rectangle2 {
+            background: red;
+            top: 180px;
+            animation: drive 5s steps(6, end) infinite;
+        }
+        #rectangle3 {
+            background: greenyellow;
+            top: 350px;
+            animation: drive 5s ease infinite;
         }
         @keyframes drive {
             0% {
                 left : 0px;
             }
             100% {
-                left : 100px;
+                left : 400px;
             }
         }
     </style>
 </head>
 <body>
-    <div id="rectangle">
-    </div>
+  <div id="rectangle1" class="same"></div>
+  <div id="rectangle2" class="same"></div>
+  <div id="rectangle3" class="same"></div>
 </body>
 </html>
