@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tansition动画演示</title>
+    <style media="screen">
+    .par-rectangle{
+      position:relative;
+      }
+      .rectangle{
+      position:absolute;
+      background:red;
+      width:80px;
+      height:80px;
+      top:20px;
+      left:50px;
+      border-radius:0;
+      transform:rotate(0deg);
+      transition:all 3s ease-in-out 0.1s;
+      }
+      .rectangle:hover{
+      top:250px;
+      left:600px;
+      width:200px;
+      height:200px;
+      background:yellow;
+      border-radius:50%;
+      transform:rotate(360deg);
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class = "par-rectangle">
+      <div class = "rectangle"></div>
+    </div>
+  </body>
+</html>
