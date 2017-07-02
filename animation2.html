@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>animation逐帧动画</title>
+    <style>
+    body {
+	    text-align: center;
+        background-color: rgba(0, 0, 0, 0)
+    }
+
+    @-webkit-keyframes wink {
+        from { background-position: 0px; }
+        to { background-position: -500px; }
+    }
+
+    @-moz-keyframes wink {
+        from { background-position: 0px; }
+        to { background-position: -500px; }
+    }
+
+    @keyframes wink {
+        from { background-position: 0px; }
+        to { background-position: -500px; }
+    }
+
+    .hi {
+        width: 50px;
+        height: 72px;
+        background-image: url("http://cssdeck.com/uploads/media/items/9/9fVQoLD.png");
+        margin: 0 auto;
+        animation: wink .8s steps(10, end) infinite;
+    }
+    </style>
+</head>
+<body>
+    <img src="http://cssdeck.com/uploads/media/items/9/9fVQoLD.png">
+    <div class="hi"></div>
+</body>
+</html>
